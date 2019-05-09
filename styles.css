@@ -16,8 +16,11 @@
 } */
 
 table {
-  border-collapse: separate;
+  
   border-spacing: 0px 0px;
+  margin: 0px auto;
+  float: none;
+}
 }
 
 div {
@@ -25,17 +28,22 @@ div {
 }
 
 .square {
-  height: 10px;
-  width: 10px;
+  height: 20px;
+  width: 20px;
   border-style: solid;
   border-width: thin;
-  border-color: lightgrey
+  border-color: lightgrey;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .palette-color {
   height: 20px;
-  width: 20px;
+  width: 30px;
   display: inline-block;
   padding: 5px;
   margin: 5px;
+  box-shadow: 2px 2px 5px grey;
 }

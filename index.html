@@ -7,17 +7,24 @@
 }
   </style>
   <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta charset="utf-8" />
-    <title><strong>Pixel Art</strong></title>
+    <title>Pixel Art</title>
 
     <link rel="stylesheet" href="styles.css" />
 
     <script src="pixel.js"></script>
   </head>
   <body>
-    <div id="board">
+    <h1 class="text-center">Pixel Art Maker</h1>
+    <div class="container text-center" id="board">
 
     </div>
-    <div id="palette"></div>
+    <h2 class="text-center">Pick a color</h2>
+    <form class="text-center" id="newColor">
+      <input onfocus="this.value=''" id="colorField" type="text" name="color" value="Add a color">
+      <input type="submit" value="Submit">
+    </form>
+    <div class="text-center" id="palette"></div>
   </body>
 </html>
